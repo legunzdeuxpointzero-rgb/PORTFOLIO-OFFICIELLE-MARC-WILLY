@@ -12,7 +12,7 @@ var STATUS = { ligne: "En ligne", realise: "Réalisé", cours: "En développemen
 var DOMAINS = { web: "Web & entrepreneuriat", res: "Réseaux & systèmes", crea: "Création & communication" };
 
 var PROJECTS = [
- { id:"veloci", featured:true, dom:"web", st:"ligne", title:"Véloçi — Location de vélos", ini:"V", hue:0, coverImage:"assets/images/veloci.jpeg", images:["assets/images/image.jpg"],
+ { id:"veloci", featured:true, caseStudy:true, dom:"web", st:"ligne", title:"Véloçi — Location de vélos", ini:"V", hue:0, coverImage:"assets/images/veloci.jpeg", images:["assets/images/image.jpg"],
    cat:"Entrepreneuriat · Développement web · Mobilité",
    sum:"Plateforme de location de vélos pour les livreurs et les particuliers d'Abidjan.",
    problem:"Comment permettre aux livreurs et aux particuliers d'Abidjan d'accéder à un vélo fiable sans l'acheter, et leur faciliter la prise de contact ?",
@@ -22,7 +22,7 @@ var PROJECTS = [
    result:["Site multi-pages en ligne, adapté au mobile.","Demande de location en un message WhatsApp.","Un outil de gestion interne est développé à part (voir la fiche dédiée)."],
    link:"https://veloci-ci.vercel.app", linkTxt:"Voir le site" },
 
- { id:"ezuni", featured:true, dom:"web", st:"ligne", title:"EZUNIALU — Site d'entreprise", ini:"EA", hue:1, coverImage:"assets/images/ezunialu.jpeg",
+ { id:"ezuni", featured:true, caseStudy:true, dom:"web", st:"ligne", title:"EZUNIALU — Site d'entreprise", ini:"EA", hue:1, coverImage:"assets/images/ezunialu.jpeg",
    cat:"Développement web · Site vitrine",
    sum:"Site professionnel pour une entreprise de menuiserie aluminium et PVC.",
    problem:"Comment présenter une entreprise de menuiserie aluminium, PVC, vitrerie et construction métallique de façon crédible et permettre aux clients de demander un devis ?",
@@ -32,7 +32,7 @@ var PROJECTS = [
    result:["Site en ligne avec référencement local (Abidjan, Côte d'Ivoire).","Parcours clair vers la demande de devis sur WhatsApp."],
    link:"https://ezunialu.vercel.app", linkTxt:"Voir le site" },
 
- { id:"carriere", featured:false, dom:"web", st:"ligne", title:"Journée Carrière UIST / 2ITS", ini:"JC", hue:2, coverImage:"assets/images/CARRIERE.jpeg",
+ { id:"carriere", featured:false, caseStudy:true, dom:"web", st:"ligne", title:"Journée Carrière UIST / 2ITS", ini:"JC", hue:2, coverImage:"assets/images/CARRIERE.jpeg",
    cat:"Éducation · Collecte de données · Application web",
    sum:"Inscription en ligne des élèves à une journée d'orientation, avec espace organisateur.",
    problem:"Comment collecter rapidement et proprement les informations des élèves lors d'une journée d'orientation universitaire, puis les exploiter ?",

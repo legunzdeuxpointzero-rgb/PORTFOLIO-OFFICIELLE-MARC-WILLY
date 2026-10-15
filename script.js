@@ -62,6 +62,17 @@ function renderGrid(){
   $("#count").textContent = list.length + (list.length>1 ? " projets affichés" : " projet affiché");
 }
 
+function renderCaseStudies(){
+  var grid = $("#case-grid");
+  if (!grid) return;
+  grid.innerHTML = PROJECTS.filter(function(p){ return p.caseStudy; }).map(function(p){
+    return '<a class="case-study" href="projet.html?id='+encodeURIComponent(p.id)+'">' +
+      '<img src="'+esc(p.coverImage)+'" alt="Visuel du projet '+esc(p.title)+'" loading="lazy">' +
+      '<span class="case-study-copy"><span class="case-study-label">'+esc(p.cat)+'</span><strong>'+esc(p.title)+'</strong><span>'+esc(p.sum)+'</span><span class="case-study-link">Lire l’étude de cas <span aria-hidden="true">→</span></span></span>' +
+    '</a>';
+  }).join("");
+}
+
 /* ====== FICHE PROJET ====== */
 var dlg = $("#dlg");
 function openProject(id){
@@ -190,4 +201,4 @@ tbtn.addEventListener("click", function(){
 
 /* ====== INIT ====== */
 $("#poster-about").src = POSTER;
-renderFilters(); renderGrid(); renderFacet("tech"); onScroll();
+renderFilters(); renderGrid(); renderCaseStudies(); renderFacet("tech"); onScroll();
