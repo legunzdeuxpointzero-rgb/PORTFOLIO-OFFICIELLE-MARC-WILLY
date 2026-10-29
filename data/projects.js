@@ -53,14 +53,15 @@ var PROJECTS = [
    link:"https://gestion-veloci.onrender.com", linkTxt:"Ouvrir le tableau de bord",
    note:"Version de démonstration : l'hébergement gratuit peut mettre quelques secondes à démarrer." },
 
- { id:"billetterie", featured:false, dom:"web", st:"cours", title:"Plateforme intelligente de billetterie", ini:"BQ", hue:4,
+ { id:"billetterie", featured:false, dom:"web", st:"ligne", title:"Plateforme intelligente de billetterie", ini:"BQ", hue:4, coverImage:"assets/images/ticket-event-ui.svg", images:["assets/images/ticket-event-ui.svg"],
    cat:"Application web · Événementiel · Billetterie",
    sum:"Réservation de places, billets QR et contrôle des entrées.",
    problem:"Comment faciliter la découverte d'événements, la réservation et le contrôle des entrées avec les moyens de paiement locaux ?",
    solution:"Une plateforme prévue en versions successives : catalogue d'événements, réservation, confirmation manuelle des paiements Wave, génération de billets QR, puis validation et contrôle à l'entrée. L'automatisation des paiements est envisagée dans un second temps.",
    role:"Conception fonctionnelle et développement.",
    tech:["HTML","CSS","JavaScript","QR code"],
-   result:["Version initiale avec confirmation manuelle des paiements.","Démonstration à ajouter dès que les fonctions sont disponibles."] },
+   result:["Version initiale avec confirmation manuelle des paiements.","Démonstration accessible en ligne."],
+   link:"https://ticket-event-dmqq.onrender.com", linkTxt:"Découvrir la plateforme" },
 
  { id:"linkcard", featured:false, dom:"web", st:"concept", title:"LINKCARD — Carte de visite numérique", ini:"LC", hue:5, coverImage:"assets/images/carte.jpeg",
    cat:"Identité numérique · QR code · Produit numérique",
@@ -205,4 +206,3 @@ var FACETS = {
  crea: { p:"Je conçois des sites et des outils clairs, rapides et adaptés au mobile, pour des entreprises, une université et mes propres idées.", ids:["ezuni","carriere","affiche","motion"] },
  entr: { p:"Avec Véloçi, j'ai créé une activité de mobilité pour les livreurs d'Abidjan et je construis autour d'elle des outils, une communauté et de nouveaux projets.", ids:["veloci","gestion","randos","billetterie"] }
 };
-
